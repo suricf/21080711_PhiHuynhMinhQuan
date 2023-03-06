@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 16</title>
+    <style>
+        input:not(:last-child) {
+            border: 3px solid #7d7171;
+            border-right-color: #e7e5e5;
+            border-bottom-color: #e7e5e5;
+            outline-color: #7d7171;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 350px; margin: auto; padding: 4px; box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.3);">
+        <h1>Travle reservation from</h1>
+        <p><b>* denotes mandotory</b></p>
+        <form action="">
+            <label for="fullname">Full name*:</label> <br>
+            <input id="fullname" name="fullname" type="text" placeholder="FirstName LastName"><br>
+            <label for="emailaddress">Email address*:</label><br>
+            <input id="emailaddress" name="emailaddress" type="text" placeholder="EMAIL_ADDRESS"> <br>
+            <label for="selectour">Select Tour Packae*:</label><br>
+            <select name="selectour" id="selectour">
+                <option value="">Goa</option>
+                <option value="">Huyio</option>
+            </select> <br>
+            <label for="date">Arrival date*:</label><br>
+            <input id="date" name="date" type="text" placeholder="m/d/y"><br>
+            <label for="numberofperson">Number of Person*:</label><br>
+            <input id="numberofperson" name="numberofperson" type="text" placeholder="UNKNOWN_TYPE"><br>
+            <span>What would you want to avail?*</span><br>
+            <label for="boarding">Boarding</label>
+            <input id="boarding" type="checkbox" name="check"><br>
+            <label for="fooding">Fooding</label>
+            <input id="fooding" type="checkbox" name="check"><br>
+            <label for="sightseeing">Sight seeing</label>
+            <input id="sightseeing" type="checkbox" name="check"><br>
+            <span>Discout Coupon code:</span><br>
+            <input id="discout" name="discout" type="text" placeholder="UNKNOWN_TYPE"><br>
+            <span>Terms and conditions*</span><br>
+            <input id="agree" type="radio" name="select">
+            <label for="agree">I agree</label>
+            <input id="disagree" type="radio" name="select">
+            <label for="disagree">I disagree</label><br>
+            <input id="submit" name="submit" type="submit" value="Complete reservation">
+        </form>
+    </div>
+</body>
+</html>

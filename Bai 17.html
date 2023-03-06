@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 17</title>
+    <style>
+        .content_1, .content_2 {
+            padding: 4px;
+            margin: auto;
+            box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .content_1 {
+            width: 640px;
+            background-color: #ffd078;
+            margin-bottom: 20px;    
+        }
+
+        .content_2 {
+            width: 500px;
+        }
+
+        .content_1 input, textarea {
+            margin-left: 15px;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Content 1 -->
+        <div class="content_1">
+            <h1>Survey Form</h1>
+            <p>if you are interesed in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department.
+                answering any question is optional, and all information will be kept strictly confidential. Thank you for much for your time!
+            </p>
+            <form action="">
+                <label for="name">1. What is your name?</label><br>
+                <input type="text" size="30px"> <br><br>
+                <label for="dateofbirth">2. What is your date of birth?</label><br>
+                <label for="month">Month:</label>
+                <select name="" id="">
+                    <option value="">January</option>
+                    <option value="">February</option>
+                </select>
+                <label for="month">Date:</label>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+                <label for="year">Year</label>
+                <input type="text" size="1px" value="19"><br><br>
+                <label for="address">3. What is your mailling address (if you would like to have a hard copy of our catalog sent to you)?</label><br>
+                <textarea name="" id="" cols="44" rows="4">Number/P,O, Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:      
+                </textarea><br><br>
+                <label for="email">4. What is your email address?</label><br>
+                <input type="text"><br><br>
+                <label for="product">5. Have you viewed our online product catalog?</label><br>
+                <input type="radio" id="raido_1" name="raido" value="yes">
+                <label for="raido_1">Yes</label>
+                <input type="radio" id="raido_2" name="raido" value="No">
+                <label for="raido_2">No</label><br><br>
+                <label for="apply">6. if so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</label><br>
+                <input type="checkbox"><label for="">VCR</label><br>
+                <input type="checkbox"><label for="">Big Screen Tv</label><br>
+                <input type="checkbox"><label for="">Audio Equipment</label><br>
+                <input type="checkbox"><label for="">Video Equipment</label><br>
+                <input type="checkbox"><label for="">Camera Equipment</label><br>
+                <input type="checkbox"><label for="">Other</label>
+                <input type="text" size="30px" value="Please List:" required>
+                <br><br>
+                <label for="question">7. Do you have any question, comments or suggestions before proceeding to the Order Form?</label><br>
+                <textarea name="" id="" cols="43" rows="5">Your Input:</textarea> <br> <br>
+                <div style="text-align: center;">
+                    <input type="submit" value="Send Form">
+                    <input type="submit" value="Clear Form">
+                </div>          
+            </form>
+        </div>
+        <div style="height: 1px; background-color: #ccc; margin: 20px 0px;"></div>
+        <!-- Content 2 -->
+        <div class="content_2">
+            <label for="browser">Browser:</label>
+            <select name="" id="" style="width: 200px;">
+            <option value=""></option></select><br><br>
+            <label for="usename">Usename:</label>
+            <input type="text"><br><br>
+            <label for="hight">Encryption</label>
+            <select name="" id="" style="width: 150px;"></select><br><br>
+            <input type="range" id="rangeInput" name="rangeInput"
+                min="0" max="100" value="0" step="1" data-show-value="true"
+                oninput="updateTextInput(this.value);">
+            <output name="amount" id="amount" for="rangeInput">0</output> <br><br>
+            <input type="text" value="50"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date"><br><br>
+            <label for="color">Select your favorite color</label>
+            <input type="color"><br><br>
+            <label for="">Birthday (month and year):</label>
+            <input type="month"><br><br>
+            <label for="">Select a week:</label>
+            <input type="week"><br><br>
+            <label for="">Birthday (date and time):</label>
+            <input type="datetime"><br><br>
+            <label for="">E-mail</label>
+            <input type="email" name="email"><br><br>
+            <label for="">Search Google:</label>
+            <input type="text" name="Google"><br><br>
+            <label for="">Telephone:</label>
+            <input type="tel" name="Telephone"><br><br>
+            <label for="">Add your homepage:</label>
+            <input type="text" name=""><br><br>
+            <input type="submit" value="Submit">
+            <p><b>Note:</b>The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+        </div>
+    </div>
+    
+    <script>
+    updateTextInput('0');
+    function updateTextInput(val){
+    document.getElementById('amount').value=val; //update current slider value
+    // do other action here
+    }
+    </script>
+</body>
+</html>
